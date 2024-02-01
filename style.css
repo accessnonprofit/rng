@@ -116,17 +116,15 @@ button:hover {
     margin: 0 auto;
 }
 
-/* #range * {
-} */
-
 #inputs {
     width: max-content;
     display: inline-block;
 }
 
 #result {
-    font-size: 1.5rem;
-    height: 3rem;
+    font-size: 4.5rem;
+    font-weight: 600;
+    height: 5rem;
 }
 
 #footer {
