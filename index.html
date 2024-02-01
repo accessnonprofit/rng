@@ -34,22 +34,20 @@
                     <label style="font-size: 1.5rem"> - </label>
                     <input type="number" id="max" name="max" value="100" min="1">
                 </div>
-                <button onclick="generateRandomNumber()">Generate</button>
+                    <button onclick="clickButton()" id="button">
+                        Generate
+                    </button>
             </div>
             <p id="result"></p>
         </div>
     </div>
+    <canvas id="canvas"> </canvas>
+
 
     <div id="footer"></div>
 
-    <script>
-        function generateRandomNumber() {
-            var min = document.getElementById("min").value;
-            var max = document.getElementById("max").value;
-            var result = Math.floor(Math.random() * (max - min + 1)) + Number(min);
-            document.getElementById("result").innerHTML = result;
-        }
-    </script>
+    <script src="confetti.js"></script>
+
 </body>
 
 </html>
