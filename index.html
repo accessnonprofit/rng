@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Random Number Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="header">
+        <div id="logo">
+            <img src="images/logo.png" class="img-header" />
+        </div>
+        <div>
+            <h2>Access Nonprofit Center</h2>
+            <h1 id="header-title"> Random Number Generator </h1>
+        </div>
+        <div id="slogan">
+            <img src="images/slogan.png" class="img-header" />
+        </div>
+    </div>
+
+    <div id="content-bg">
+        <div id="content">
+            <h3>Select a range then generate a random number</h3>
+            <div id="range">
+                <div id="inputs">
+                    <input type="number" id="min" name="min" value="1" min="0">
+                    <label> - </label>
+                    <input type="number" id="max" name="max" value="100" min="1">
+                </div>
+                <button onclick="generateRandomNumber()">Generate</button>
+            </div>
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="img-wrapper">
+            <img src="images/babies.png" />
+        </div>
+    </div>
+
+    <script>
+        function generateRandomNumber() {
+            var min = document.getElementById("min").value;
+            var max = document.getElementById("max").value;
+            var result = Math.floor(Math.random() * (max - min + 1)) + Number(min);
+            document.getElementById("result").innerHTML = result;
+        }
+    </script>
+</body>
+
+</html>
