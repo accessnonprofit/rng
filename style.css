@@ -47,7 +47,7 @@ input {
     border-radius: 0.25rem;
     text-align: center;
     font-size: 1.5rem;
-    width: 7em;
+    width: 5em;
 }
 
 button {
@@ -59,7 +59,7 @@ button {
     cursor: pointer;
     display: inline-flex;
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 400;
     justify-content: center;
     padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
     position: relative;
@@ -160,9 +160,6 @@ a {
 }
 
 /* Footer */
-/* #footer > div {
-    padding: 1rem;
-} */
 #footer p {
     color: white;
 }
@@ -433,7 +430,7 @@ button {
 
 /* For Tablet View */
 @media screen and (min-device-width: 768px) 
-              and (max-device-width: 1024px) 
+              and (max-device-width: 1023px) 
               and (min-device-height: 500px) {
 
 body {
@@ -457,7 +454,7 @@ input {
     padding: 0.5rem;
     border-radius: 0.25rem;
     font-size: 1.5rem;
-    width: 7em;
+    width: 5em;
 }
 button {
     font-size: 1.5rem;
@@ -467,7 +464,7 @@ button {
 
 .img-header {
     height: 120px;
-    width: 121px;
+    width: 120px;
 }
 
 .img-qrcode {
@@ -537,6 +534,10 @@ button {
  
 /* For Desktop View */
 @media screen and (min-width: 1024px) {
+body {
+    background-image: url("images/background.png");
+    background-size: 100% 100%;
+}
 h1 {
     font-size: 3rem; /* 48px */
 }
@@ -554,7 +555,7 @@ input {
     padding: 0.5rem;
     border-radius: 0.25rem;
     font-size: 1.5rem;
-    width: 7em;
+    width: 5em;
 }
 button {
     font-size: 1.5rem;
@@ -564,16 +565,16 @@ button {
 
 .img-header {
     height: 120px;
-    width: 121px;
+    width: 120px;
 }
 
 .img-qrcode {
-    height: 80px;
-    width: 80px;
+    height: 120px;
+    width: 120px;
 }
 
 .img-sponsor {
-    height: 80px;
+    height: 90px;
 }
 
 #header {
@@ -583,6 +584,7 @@ button {
 
 #header-logos {
     display: flex;
+    height: 70px;
 }
 
 #title {
@@ -609,7 +611,7 @@ button {
 }
 
 #contact-info > p {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 #img-footer {
     height: 130px;
@@ -626,7 +628,7 @@ button {
 }
 
 #qr > div {
-    font-size: 0.75rem;
+    font-size: 1.25rem;
     margin-left:0.25rem;
     margin-right: 0.25rem;
 }
