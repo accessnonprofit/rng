@@ -504,9 +504,6 @@ button {
     padding-bottom: 0.5rem;
 }
 
-#contact-info {
-    margin-bottom: 2rem;
-}
 
 #contact-info > p {
     font-size: 2rem;
@@ -604,10 +601,6 @@ button {
 
 #footer {
     padding-bottom: 0.5rem;
-}
-
-#contact-info {
-    margin-bottom: 2rem;
 }
 
 #contact-info > p {
